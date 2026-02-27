@@ -1,0 +1,50 @@
+[
+  {
+    "feature": "HbA1c_level",
+    "importance_pct": 38.35,
+    "category": "MODIFIABLE",
+    "intervention": "Sustained glycemic control (3-month avg)"
+  },
+  {
+    "feature": "blood_glucose_level",
+    "importance_pct": 29.62,
+    "category": "MODIFIABLE",
+    "intervention": "Dietary management + medication"
+  },
+  {
+    "feature": "age",
+    "importance_pct": 16.3,
+    "category": "STATIC",
+    "intervention": "Non-modifiable: biological aging"
+  },
+  {
+    "feature": "bmi",
+    "importance_pct": 8.37,
+    "category": "MODIFIABLE",
+    "intervention": "Diet & exercise intervention"
+  },
+  {
+    "feature": "hypertension",
+    "importance_pct": 3.3,
+    "category": "STATIC",
+    "intervention": "Historical diagnosis (manageable, not reversible)"
+  },
+  {
+    "feature": "smoking_history_encoded",
+    "importance_pct": 2.24,
+    "category": "MODIFIABLE",
+    "intervention": "Smoking cessation program"
+  },
+  {
+    "feature": "heart_disease",
+    "importance_pct": 1.41,
+    "category": "STATIC",
+    "intervention": "Historical diagnosis (manageable, not reversible)"
+  },
+  {
+    "feature": "gender_encoded",
+    "importance_pct": 0.41,
+    "category": "STATIC",
+    "intervention": "Non-modifiable: biological sex"
+  }
+]

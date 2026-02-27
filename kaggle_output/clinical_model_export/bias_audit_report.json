@@ -1,0 +1,35 @@
+{
+  "audit_date": "2026-02-24T18:31:18.674467",
+  "bias_threshold": 0.05,
+  "cohorts": [
+    {
+      "cohort": "Female",
+      "n_patients": 11901,
+      "n_positive": 876,
+      "prevalence": 7.36,
+      "accuracy": 0.9391,
+      "recall": 0.8516,
+      "precision": 0.5563,
+      "f1": 0.673,
+      "auc_roc": 0.9784,
+      "auc_pr": 0.8737,
+      "fnr": 0.1484
+    },
+    {
+      "cohort": "Male",
+      "n_patients": 8294,
+      "n_positive": 841,
+      "prevalence": 10.14,
+      "accuracy": 0.9168,
+      "recall": 0.8633,
+      "precision": 0.558,
+      "f1": 0.6779,
+      "auc_roc": 0.9729,
+      "auc_pr": 0.8797,
+      "fnr": 0.1367
+    }
+  ],
+  "recall_gap": 0.0117,
+  "auc_gap": 0.0055,
+  "verdict": "APPROVED"
+}

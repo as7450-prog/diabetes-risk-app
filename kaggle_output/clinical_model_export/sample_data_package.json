@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "patient_id": "SAMPLE-0001",
+    "model_version": "RF_v2.0_balanced_200trees",
+    "timestamp": "2026-02-24T18:31:18.673533",
+    "clinical_threshold": 0.5
+  },
+  "risk_score": {
+    "percentage": 51.39,
+    "tier": "HIGH",
+    "binary_prediction": 1,
+    "recommended_action": "Immediate HbA1c + OGTT + specialist referral"
+  },
+  "current_vitals": {
+    "bmi": {
+      "label": "BMI",
+      "value": 27.1,
+      "unit": "kg/m\u00b2"
+    },
+    "blood_glucose_level": {
+      "label": "Blood Glucose",
+      "value": 131.0,
+      "unit": "mg/dL"
+    },
+    "HbA1c_level": {
+      "label": "HbA1c",
+      "value": 5.65,
+      "unit": "%"
+    },
+    "age": {
+      "label": "Age",
+      "value": 70.0,
+      "unit": "years"
+    },
+    "hypertension": {
+      "label": "Hypertension",
+      "value": 0.0,
+      "unit": "binary"
+    },
+    "heart_disease": {
+      "label": "Heart Disease",
+      "value": 0.0,
+      "unit": "binary"
+    }
+  },
+  "top_modifiable_drivers": [
+    {
+      "factor": "HbA1c_level",
+      "importance_pct": 38.35,
+      "intervention": "Sustained glycemic control (3-month avg)",
+      "patient_value": 5.65
+    },
+    {
+      "factor": "blood_glucose_level",
+      "importance_pct": 29.62,
+      "intervention": "Dietary management + medication",
+      "patient_value": 131.0
+    },
+    {
+      "factor": "bmi",
+      "importance_pct": 8.37,
+      "intervention": "Diet & exercise intervention",
+      "patient_value": 27.1
+    },
+    {
+      "factor": "smoking_history_encoded",
+      "importance_pct": 2.24,
+      "intervention": "Smoking cessation program",
+      "patient_value": 2.0
+    }
+  ],
+  "simulated_risk_reduction": {
+    "current_risk": 51.39,
+    "projected_risk": 0.0,
+    "absolute_reduction": 51.39,
+    "relative_reduction": 100.0,
+    "current_tier": "HIGH",
+    "projected_tier": "LOW",
+    "interventions": [
+      {
+        "factor": "BMI",
+        "current_value": 27.1,
+        "projected_value": 24.39,
+        "change": "-10%",
+        "how": "Diet + 150 min/week moderate exercise"
+      },
+      {
+        "factor": "Blood Glucose",
+        "current_value": 131.0,
+        "projected_value": 117.9,
+        "change": "-10%",
+        "how": "Carbohydrate management + metformin if indicated"
+      },
+      {
+        "factor": "HbA1c",
+        "current_value": 5.65,
+        "projected_value": 5.37,
+        "change": "-5%",
+        "how": "Sustained glycemic control over 3+ months"
+      },
+      {
+        "factor": "Smoking",
+        "current_value": "Code 2",
+        "projected_value": "Never / Ceased",
+        "change": "Cessation",
+        "how": "NRT + behavioral counseling"
+      }
+    ]
+  },
+  "llm_prompt_context": "Patient SAMPLE-0001 has a diabetes risk score of 51.39% (HIGH risk). Top modifiable factors: HbA1c_level, blood_glucose_level, bmi. With recommended interventions, risk could reduce from 51.39% to 0.0% (a 51.4 percentage point improvement)."
+}

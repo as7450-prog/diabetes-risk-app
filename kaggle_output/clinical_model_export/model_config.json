@@ -1,0 +1,35 @@
+{
+  "model_type": "RandomForestClassifier",
+  "n_estimators": 200,
+  "max_depth": 15,
+  "class_weight": "balanced",
+  "clinical_threshold": 0.5,
+  "feature_names": [
+    "age",
+    "hypertension",
+    "heart_disease",
+    "bmi",
+    "HbA1c_level",
+    "blood_glucose_level",
+    "gender_encoded",
+    "smoking_history_encoded"
+  ],
+  "target": "diabetes",
+  "test_auc_roc": 0.976,
+  "test_recall": 0.8573,
+  "test_precision": 0.5572,
+  "test_f1": 0.6754,
+  "training_samples": 80793,
+  "modifiable_factors": [
+    "bmi",
+    "blood_glucose_level",
+    "HbA1c_level",
+    "smoking_history_encoded"
+  ],
+  "static_factors": [
+    "age",
+    "gender_encoded",
+    "hypertension",
+    "heart_disease"
+  ]
+}
