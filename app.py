@@ -68,6 +68,12 @@ def clean_input(raw: dict) -> pd.DataFrame:
     return df
 
 
+# ── Health Check ────────────────────────────────────────────────────────────
+@app.route("/", methods=["GET"])
+def health():
+    return jsonify({"status": "ok", "message": "Diabetes Risk API is running."})
+
+
 # ── /predict Route ──────────────────────────────────────────────────────────
 @app.route("/predict", methods=["POST"])
 def predict():

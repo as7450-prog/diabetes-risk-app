@@ -3,7 +3,7 @@
 **An AI-powered, real-time clinical decision-support web application for diabetes risk prediction.**
 
 🌐 **Live App:** [diabetes-risk-app-kappa.vercel.app](https://diabetes-risk-app-kappa.vercel.app)
-🔧 **API:** [diabetes-risk-app-oiec.onrender.com](https://diabetes-risk-app-oiec.onrender.com)
+🔧 **API:** [diabetes-risk-app-oiec.onrender.com/predict](https://diabetes-risk-app-oiec.onrender.com/predict)
 
 ---
 
