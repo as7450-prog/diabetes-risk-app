@@ -52,6 +52,18 @@ Live Dashboard Update (Recharts + Framer Motion)
 
 ---
 
+## 🤖 How GenAI Is Integrated
+
+This project was built end-to-end with **Google Deepmind's Antigravity AI** coding assistant:
+- Architecture design and API scaffolding
+- React dashboard component generation
+- Feature contribution scoring logic
+- Full cloud deployment pipeline (GitHub → Render + Vercel)
+
+**Future GenAI integration:** LLM-powered natural language explanations — *"Your top risk factor is high blood glucose. Here's what you can do…"*
+
+---
+
 ## 🏗️ Architecture
 
 ```
